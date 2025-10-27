@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shiskar Studio Manager</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header><h1>🎧 Shiskar Studio Manager</h1></header>
+  <nav class="top-nav">
+    <h1>🎧 Shiskar Studio</h1>
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
   <main class="dashboard">
     <a href="music.html" class="card">🎵 Music Manager</a>
     <a href="youtube.html" class="card">🎬 YouTube Player</a>

@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YouTube Player</title>
   <link rel="stylesheet" href="style.css" />
   <script src="app.js" defer></script>
 </head>
 <body>
-  <header><h1>🎬 YouTube Player</h1></header>
+  <nav class="top-nav"><h1>🎬 YouTube Player</h1></nav>
   <main>
     <select id="channelSelect">
-      <option value="https://www.youtube.com/@HandyBoyVictor">HandyBoyVictor</option>
-      <option value="https://www.youtube.com/@ShiskarMusic">ShiskarMusic</option>
+      <option value="https://www.youtube.com/embed/videoseries?list=PL">Default Playlist</option>
     </select>
     <input id="customChannel" placeholder="Add custom channel URL" />
     <button onclick="addChannel()">Add Channel</button>
-    <button onclick="playChannel()">Play Channel</button>
     <iframe id="ytPlayer" width="100%" height="300" allow="autoplay"></iframe>
   </main>
 </body>
