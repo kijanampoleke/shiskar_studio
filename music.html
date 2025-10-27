@@ -8,13 +8,48 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  <nav class="top-nav"><h1>🎵 Music Manager</h1></nav>
+  <nav class="top-nav">
+    <h1>🎵 Music Manager</h1>
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+
   <main>
-    <input id="songTitle" placeholder="Song Title" />
-    <input id="artistName" placeholder="Artist Name" />
-    <input id="tags" placeholder="Tags" />
-    <button onclick="addMusic()">Add Music</button>
-    <div id="musicList"></div>
+    <!-- Online Music Section -->
+    <section>
+      <h2>🎧 Add Online Music</h2>
+      <input id="onlineTitle" placeholder="Song Title" />
+      <input id="onlineArtist" placeholder="Artist Name" />
+      <input id="onlineURL" placeholder="Online URL (YouTube, SoundCloud...)" />
+      <button onclick="addOnlineMusic()">Add Song</button>
+      <div id="onlineMusicList"></div>
+    </section>
+
+    <!-- Create New Music Section -->
+    <section>
+      <h2>🛠️ Create New Music</h2>
+      <input id="newTitle" placeholder="Title" />
+      <input id="newArtist" placeholder="Artist" />
+      <input id="newTags" placeholder="Tags/Genre" />
+      <input type="file" id="audioUpload" accept="audio/*" />
+      <input type="file" id="coverUpload" accept="image/*" />
+      <textarea id="lyricsEditor" placeholder="Write lyrics here..."></textarea>
+      <button onclick="saveNewSong()">Save Song</button>
+      <button onclick="deleteSong()">Delete Song</button>
+    </section>
+
+    <!-- Lyrics Import Section -->
+    <section>
+      <h2>📄 Import Lyrics</h2>
+      <input type="file" id="lyricsImport" accept=".docx,.txt,.md" />
+      <button onclick="importLyrics()">Import</button>
+    </section>
+
+    <!-- Playback Section -->
+    <section>
+      <h2>🎶 Playback</h2>
+      <audio id="audioPlayer" controls></audio>
+      <canvas id="waveform"></canvas>
+    </section>
   </main>
 </body>
 </html>
