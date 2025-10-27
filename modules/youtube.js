@@ -1,4 +1,4 @@
-const YOUTUBE_API_KEY = "💢💢💢";
+const YOUTUBE_API_KEY = "AIzaSyA9brAUD5R5HzbZaiq28AsQB8H0NQPXvWs";
 
 export function initYouTubeManager() {
   const section = document.getElementById("youtube");
