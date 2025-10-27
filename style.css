@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+header {
+  background: #4b0082;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  padding: 20px;
+}
+input, button, select {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.card {
+  background: #ffffff;
+  border: 2px solid #4b0082;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #4b0082;
+  font-size: 1.2em;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  background: #e6e0f8;
+}

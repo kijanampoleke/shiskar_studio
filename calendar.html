@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calendar & Reminders</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><h1>📅 Calendar & Reminders</h1></header>
+  <main>
+    <input type="date" id="reminderDate" />
+    <input type="time" id="reminderTime" />
+    <input id="reminderText" placeholder="Reminder Text" />
+    <button onclick="addReminder()">Add Reminder</button>
+    <div id="reminderList"></div>
+  </main>
+</body>
+</html>
